@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title> Registration Page</title>
+    </head>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            align-items: center;
+        }
+        /* tr{
+            height: 30px;
+            /* display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+           
+        } */
+        td{
+          /* border: 3px solid black; */
+            text-align: center;
+            align-items: center;
+            
+        }
+        label{
+           border: 3px solid black;
+        }
+
+        input{
+            border-radius: 5px;
+            height: 30px;
+        }
+    </style>
+    <body>
+        <h1 style="text-align: center;"> Registrate your Details</h1>
+        <div class="table">
+            <table style="text-align: left;">
+                <tr>
+                    <th>
+                        <p style=>Name :</p>
+                    </th>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <p>Gender</p>
+                    </th>
+                    <td>
+                        <div class="radio">
+                            <div class="male">
+                                <input type="radio" value="Male">
+                                <label for="">Male</label>
+                            </div>
+                            <div class="Female">
+                                <input type="radio" value="Female">
+                                <label for="">Female</label>
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+               <tr>
+                    <th>
+                        <p> Email address: </p>
+                    </th>
+                    <td>
+                        <input type="email">
+                    </td>
+               </tr>
+               <tr>
+                <th>
+                    <p>Password:</p>
+                </th>
+                <td>
+                    <input type="password">
+    
+                </td>
+               </tr>
+               <tr>
+                    <th>
+                        <p>Re-Enter Password: </p>
+                    </th>
+                    <td>
+                        <input type="password">
+                    </td>
+               </tr>
+               <tr>
+                <td>
+                    <input type="submit" value="">
+                </td>
+               </tr>
+            </table>
+        </div>
+    </body>
+</html>
