@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(bg.jpg);
+        }
+        .main{
+            backdrop-filter: brightness(1);
+            height: 99%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        th{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="main">
+            <div class="h1">
+                <u>    <p style="font-size: xxx-large; font-weight: 800; ">Login Interface</p></u>
+            </div>
+            <div class="table">
+                <table>
+                    <form action="LoginSucessful.html">
+                        <tr>
+                            <th>    <label for="">Enter Email Address: </label></th>
+                            <td>    <input type="email" placeholder="Email address" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <th>    <label for="">New password: </label></th>
+                            <td>    <input type="password" name="password" placeholder="8-16 Charcters Only" required></td>
+                        </tr>
+                        <tr>
+                            <td>For Registration? <a href="RegistrationPage.html">Click Here</a></td>
+                            <td> <input type="submit" value="submit"></td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+       </div>
+    </div>
+</body>
+</html>
