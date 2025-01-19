@@ -1,0 +1,141 @@
+body{
+    background-image: url(images/bg.jpg);
+}
+.body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.headingtag{
+    /* border: 2px solid red; */
+    width: 100%;
+    font-size: x-large;
+    margin: 0px;
+}
+h1{ 
+
+    /* border: 2px solid red; */
+    text-align: center;
+    margin: 12px;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+li{
+    list-style: none;
+}
+.nav a{
+    color: grey;
+    text-decoration: none;
+
+}
+a:hover{
+    color: black;
+}
+.section p{
+    /* margin-top: 20%; */
+    text-align: justify;
+}
+.footer{
+    /* margin-top: 40%; */
+    width: 100%;
+}
+.footer p{
+    text-align: center;
+}
+
+/* This is for Home Page */
+.aboutMain{
+    /* border: 2px red solid; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.box{
+    width: 50%;
+    /* border: 2px solid red ; */
+}
+.box image{
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 300px;
+
+    border: 2px solid red;
+    border-radius: 30px;
+}
+.box h1,p,a{
+    margin: 10px;
+    width: 100%;
+    /* border: 2px solid red ; */
+    text-align: left;
+}
+
+/* User Stylee */
+.userDiv{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.userMain{
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.userpage{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    
+}
+.userpage a{
+    color: black;
+    height: 100px;
+    width: 200px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    text-decoration:none ;
+    border-radius: 20px;
+}
+.userpage a:hover{
+    background-color: black;
+    color: aliceblue;
+}
+/* Rewgistration */
+.main{
+    backdrop-filter: brightness(1);
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
