@@ -1,0 +1,70 @@
+body{
+    height:97vh ;
+    background-image: url(regbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.main{
+    height: 100%;
+    background: transparent;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box{
+    height: 310px;
+    width: 290px;
+    margin-bottom: 35px;
+    margin-right: 32%;
+    backdrop-filter: blur(8px);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 1px 1px 50px black;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+.heading{
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    height: 50px;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+}
+.input{
+    width: 150px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 70px;
+    /* border: 1px solid black; */
+
+}
+.submit-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+}
+.submit-a:hover{
+    background-color: green;
+    color: black;
+    border: none;
+    box-shadow: 1px 1px 5px black;
+}
