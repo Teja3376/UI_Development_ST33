@@ -1,6 +1,6 @@
 body{
     height:97vh ;
-    background-image: url(regbg.jpg);
+    background-image: url(RegistrationBg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,12 +19,12 @@ body{
     height: 310px;
     width: 290px;
     margin-bottom: 35px;
-    margin-right: 32%;
-    backdrop-filter: blur(8px);
+    margin-right: 18%;
+    /* backdrop-filter: blur(8px); */
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    box-shadow: 1px 1px 50px black;
-    border: 1px solid black;
+    /* box-shadow: 1px 1px 50px black; */
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -39,8 +39,15 @@ body{
     font-family: 'Times New Roman', Times, serif;
     align-items: center;
 }
-.input{
-    width: 150px;
+label{
+    display: flex;
+
+}
+input{
+    width: 120px;
+    border: none;
+    background: none;
+
 }
 .submit{
     display: flex;
