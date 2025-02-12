@@ -37,6 +37,7 @@ body{
     display: flex;
     font-family: 'Times New Roman', Times, serif;
     align-items: center;
+     
 }
 .input{
     width: 150px;
