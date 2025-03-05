@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    
+</head>
+<body>
+    <h1>Tables</h1>
+    <table border="10">
+         <caption>User data</caption>  <!-- Title of the table -->
+        <tr>
+            <th>Name</th>
+            <th>Full Name</th>
+            <th>Profession</th>
+        </tr>
+        <tr>
+            <td>Teja</td>
+            <td>Charan teja</td>
+            <td>Developer</td>
+        </tr>
+        <tr>
+            <td>Mohan</td>
+            <td>Mohan krishna</td>
+            <td>developer</td>
+        </tr>
+        <tr>
+            <td>anas</td>
+            <td>Moahamad Anas</td>
+            <td>Frontend developer</td>
+        </tr>
+    </table>
+    <h2>Colspan</h2>
+    <table border="10">
+        <caption>Colspan    </caption>  <!-- Title of the table -->
+       <tr>
+           <th colspan="3">Name, State, City</th> <!--Colspan attribute-->
+
+           <th>Pincode</th>
+       </tr>
+       <tr>
+           <td>Charan</td>
+           <td>Andhra pradesh</td>
+           <td>Bhimavaram</td>
+           <td>534201</td>
+       </tr>
+   </table>
+   <h2>Rowspan</h2>
+   <table border="10">
+    <caption>Rowspan</caption>
+    <tr>
+        <th>Name</th>
+        <th>city</th>
+        <th>Area</th>
+        <th>College</th>
+    </tr>
+    <tr>
+        <td>Mohan</td>
+        <td rowspan="3">Bhimavaram</td>
+        <td rowspan="2">Mentey vari thota</td> <!--Rowspan attribute-->
+        <td>DNR</td>
+    </tr>
+    <tr>
+        <td>Charan</td>
+        <td rowspan="2">BV Raju</td> <!--Rowspan attribute-->
+    </tr>
+    <tr>
+        <td>Anas</td>
+        <td>Bank Colony</td>
+    </tr>
+   </table>
+
+</body>
+</html>
