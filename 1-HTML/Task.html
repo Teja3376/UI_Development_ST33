@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        .stopwatch {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .time {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        .toggle { background: #007bff; color: white; }
+        .reset { background: #dc3545; color: white; }
+    </style>
+</head>
+<body>
+    <div class="stopwatch">
+        <div class="time">00:00:00.000</div>
+        <button class="toggle" onclick="toggleTimer()">Start</button>
+        <button class="reset" onclick="resetTimer()">Reset</button>
+    </div>
+
+    <script>
+        let startTime, updatedTime, difference, timerInterval;
+        let running = false;
+
+        function toggleTimer() {
+            if (running) {
+                clearInterval(timerInterval);
+                difference = new Date().getTime() - startTime;
+                document.querySelector(".toggle").innerText = "Start";
+            } else {
+                startTime = new Date().getTime() - (difference || 0);
+                timerInterval = setInterval(updateTime, 10);
+                document.querySelector(".toggle").innerText = "Stop";
+            }
+            running = !running;
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            document.querySelector(".time").innerText = "00:00:00.000";
+            document.querySelector(".toggle").innerText = "Start";
+            difference = 0;
+            running = false;
+        }
+
+        function updateTime() {
+            updatedTime = new Date().getTime() - startTime;
+            let milliseconds = updatedTime % 1000;
+            let seconds = Math.floor((updatedTime / 1000) % 60);
+            let minutes = Math.floor((updatedTime / (1000 * 60)) % 60);
+            let hours = Math.floor((updatedTime / (1000 * 60 * 60)) % 24);
+
+            document.querySelector(".time").innerText = 
+                (hours < 10 ? "0" + hours : hours) + ":" +
+                (minutes < 10 ? "0" + minutes : minutes) + ":" +
+                (seconds < 10 ? "0" + seconds : seconds) + "." +
+                ("00" + milliseconds).slice(-3);
+        }
+    </script>
+</body>
+</html>
