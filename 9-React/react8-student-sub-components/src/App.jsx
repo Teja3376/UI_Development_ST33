@@ -1,6 +1,6 @@
 import React from "react"
 import Myfunction2 from "./Myfunction2";
-import Myfunc3, { Myfunc3sub } from "./Myfunc3";
+import  { Myfunc3sub } from "./Myfunc3";
 
 function App() {
  
