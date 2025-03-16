@@ -6,14 +6,14 @@ class App extends Component
 {  render(){
       return(
          <div className="App">
-          <h1> Welcome to ReactJS Class 
-                        component </h1>
+          <h1> Welcome to ReactJS Class component </h1>
                         <MyData></MyData>
                         <MyHelloData></MyHelloData>
                         <MyStudentInfo></MyStudentInfo>  
                         <MyStudentAddress></MyStudentAddress>
          </div>
-    );   } }
+    );   } 
+}
 
 class MyData extends Component {  
   render() {
