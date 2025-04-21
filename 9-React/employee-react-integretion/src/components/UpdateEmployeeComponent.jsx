@@ -11,9 +11,9 @@ class UpdateEmployeeComponent extends Component {
             lastName: '',
             emailId: ''
         }
-        this.changeFirstNameHandler = this.changeFirstNameHandler.bind(this);
-        this.changeLastNameHandler = this.changeLastNameHandler.bind(this);
-        this.updateEmployee = this.updateEmployee.bind(this);
+        // this.changeFirstNameHandler = this.changeFirstNameHandler.bind(this);
+        // this.changeLastNameHandler = this.changeLastNameHandler.bind(this);
+        // this.updateEmployee = this.updateEmployee.bind(this);
     }
 
     componentDidMount(){
